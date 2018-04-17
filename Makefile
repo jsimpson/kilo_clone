@@ -1,2 +1,8 @@
+CC=gcc
+CFLAGS=-Wall -Wextra -Werror -Wmissing-prototypes -pedantic -g -O3 -std=gnu11
+
 kilo: kilo.c
-  $(CC) kilo.c -o kilo -Wall -Wextra -pedantic -std=c99
+	$(CC) $(CFLAGS) kilo.c -o kilo
+
+clean:
+	rm kilo
